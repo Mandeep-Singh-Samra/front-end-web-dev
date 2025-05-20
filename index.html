@@ -7,210 +7,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom Style -->
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
         body {
             background-color: #000;
             color: white;
             font-family: 'Poppins', sans-serif;
         }
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+        .navbar {
             background-color: #1c1b1b;
-            height: 70px;
         }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
+        .navbar-brand span {
+            color: rgb(219, 72, 72);
         }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
+        .navbar-nav .nav-link {
             color: white;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.3s;
         }
 
-        nav ul li a:hover {
-            font-size: 1.01rem;
-            text-shadow: 1px 1px 5px #e85e5e;
+        .navbar-nav .nav-link:hover {
             color: rgb(219, 69, 69);
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 40px 0;
-        }
-
-        .firstsection>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            font-size: 1.5rem;
-        }
-
-        .rightsection img {
-            width: 70%;
-            margin: 30px 0;
-        }
-
-        .red {
-            color: rgb(219, 72, 72);
-        }
-
-        #element {
-            font-size: 2rem;
-            color: rgb(219, 72, 72);
-        }
-
-        main hr {
-            border: 2px solid rgb(219, 72, 72);
-        }
-
-        .about-section, .secondsection, .thirdsection, .contact-section {
-            background-color: #000;
-            padding: 50px 20px;
+            text-shadow: 1px 1px 5px #e85e5e;
         }
 
         .section-title {
-            font-size: 2rem;
+            color: rgb(219, 72, 72);
             text-align: center;
-            margin-bottom: 30px;
+            margin: 40px 0;
         }
 
-        .about-container {
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 100px;
-            padding: 20px;
-        }
-
-        .item-1, .item-2, .item-3 {
-            border: 1px solid rgb(219, 72, 72);
-            padding: 20px;
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
+        .project-box,
         .skill-box {
             border: 1px solid rgb(219, 72, 72);
             padding: 20px;
-            background-color: #1c1b1b;
             border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease-in-out;
         }
 
+        .project-box:hover,
         .skill-box:hover {
             transform: scale(1.05);
             box-shadow: 0 0 10px rgba(219, 72, 72, 0.7);
         }
 
-        .contact-container {
-            max-width: 700px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
-
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
         .contact-form input,
         .contact-form textarea {
-            padding: 10px;
-            border: 1px solid #847c7c;
-            border-radius: 5px;
-            background-color: silver;
+            background-color: #1c1b1b;
+            color: white;
+            border: 1px solid #ccc;
         }
 
         .contact-form button {
-            width: 150px;
-            padding: 10px;
-            border: none;
             background-color: rgb(148, 21, 21);
             color: white;
-            cursor: pointer;
-            border-radius: 5px;
         }
 
         .contact-form button:hover {
             background-color: rgb(147, 18, 18);
         }
 
-        .contact-info a {
-            color: rgb(165, 23, 23);
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .site-footer {
+        footer {
             background-color: #222;
-            color: #eee;
-            padding: 20px 10px;
+            padding: 20px;
             text-align: center;
             font-size: 1.2rem;
         }
 
         .social-links a {
             color: #eee;
-            text-decoration: none;
             margin: 0 12px;
             font-size: 1.4rem;
             transition: color 0.3s ease;
@@ -219,148 +96,134 @@
         .social-links a:hover {
             color: red;
         }
-
-        @media (max-width: 992px) {
-            .container {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 50px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .container {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .firstsection {
-                flex-direction: column;
-            }
-
-            .firstsection > div {
-                width: 80%;
-                text-align: center;
-            }
-        }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left"><span class="red">M</span>endy's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">My Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span>M</span>endy's Portfolio</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">My Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi, My name is <span class="red">Mandeep Singh</span><br>
-                and I am a Passionate <br>
-                <span id="element">Frontend Developer</span>
+    <!-- Hero Section -->
+    <section class="container text-center py-5">
+        <h1>Hi, My name is <span class="text-danger">Mandeep Singh</span></h1>
+        <h3>I am a Passionate <span id="typed-text" class="text-danger"></span></h3>
+        <img src="assets/img/bg.img1.png" alt="Mandeep Singh Image" class="img-fluid mt-4" style="max-width: 300px;">
+    </section>
+
+    <!-- About Section -->
+    <section class="container" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Hello! I'm <strong>Mandeep Singh</strong>, a passionate and self-taught <strong>Frontend Developer</strong>
+            based in <strong>Mohali, India</strong>.</p>
+        <p>I build responsive and user-friendly websites using <strong>HTML, CSS, JavaScript, and Bootstrap</strong>.
+        </p>
+        <p>Currently learning <strong>React.js</strong> to create dynamic and scalable frontend applications.</p>
+        <p>I love solving problems, learning new skills, and collaborating on meaningful projects.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container my-5" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="project-box">Project-1<br>Lorem ipsum dolor sit amet.</div>
             </div>
-            <div class="rightsection">
-                <img src="assets/img/bg.img1.png" alt="Mandeep Singh Image">
+            <div class="col-md-4">
+                <div class="project-box">Project-2<br>Lorem ipsum dolor sit amet.</div>
             </div>
-        </section>
-
-        <hr>
-
-        <section class="about-section" id="about">
-            <h2 class="section-title red">About Me</h2>
-            <div class="about-container">
-                <p>Hello! I'm <strong>Mandeep Singh</strong>, a passionate and self-taught <strong>Frontend Developer</strong> based in <strong>Mohali, India</strong>.</p>
-                <p>I build responsive and user-friendly websites using <strong>HTML, CSS, JavaScript, and Bootstrap</strong>.</p>
-                <p>Currently learning <strong>React.js</strong> to create dynamic and scalable frontend applications.</p>
-                <p>I love solving problems, learning new skills, and collaborating on meaningful projects.</p>
+            <div class="col-md-4">
+                <div class="project-box">Project-3<br>Lorem ipsum dolor sit amet.</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <hr>
-
-        <section class="secondsection" id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="container">
-                <div class="item-1">
-                    <h4>Project-1</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="item-2">
-                    <h4>Project-2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="item-3">
-                    <h4>Project-3</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <section class="thirdsection" id="skills">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-container">
+    <!-- Skills Section -->
+    <section class="container my-5" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="row g-3">
+            <div class="col-md-2 col-6">
                 <div class="skill-box">HTML</div>
+            </div>
+            <div class="col-md-2 col-6">
                 <div class="skill-box">CSS</div>
+            </div>
+            <div class="col-md-2 col-6">
                 <div class="skill-box">JavaScript</div>
+            </div>
+            <div class="col-md-2 col-6">
                 <div class="skill-box">Bootstrap</div>
+            </div>
+            <div class="col-md-2 col-6">
                 <div class="skill-box">Git & GitHub</div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <hr>
-
-        <section class="contact-section" id="contact">
-            <h2 class="section-title"><span class="red">Contact</span> Me</h2>
-            <div class="contact-container">
-                <form action="mailto:your.email@example.com" method="post" enctype="text/plain" class="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-                    <p>Phone: +91 12345 67890</p>
-                    <p>Location: Mohali, India</p>
-                </div>
+    <!-- Contact Section -->
+    <section class="container my-5" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
             </div>
-        </section>
-    </main>
-
-    <hr>
-
-    <footer class="site-footer">
-        <div class="footer-container">
-            <p>&copy; 2025 Mandeep Singh. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/Mandeep-Singh-Samra" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                |
-                <a href="https://www.linkedin.com/in/mandeep-singh-74a547355" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                |
-                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
             </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="mt-4">
+            <p>Email: <a href="mailto:your.email@example.com" class="text-danger">your.email@example.com</a></p>
+            <p>Phone: +91 12345 67890</p>
+            <p>Location: Mohali, India</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mandeep Singh. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Mandeep-Singh-Samra" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mandeep-singh-74a547355" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
 
-    <!-- Optional JavaScript for future use (e.g., Typed.js) -->
-    <!-- <script src="your-script.js"></script> -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Typed.js effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed-text', {
+            strings: ["Frontend Developer", "Web Designer", "Bootstrap Expert"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>
