@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous" />
 
-    <!-- Custom Style -->
     <style>
         body {
             background-color: #000;
@@ -24,70 +28,66 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .navbar {
+        nav {
             background-color: #1c1b1b;
         }
 
-        .navbar-brand span {
-            color: rgb(219, 72, 72);
-        }
-
-        .navbar-nav .nav-link {
+        nav a {
             color: white;
-            transition: all 0.3s;
+            transition: all 0.3s ease-in-out;
         }
 
-        .navbar-nav .nav-link:hover {
-            color: rgb(219, 69, 69);
+        nav a:hover {
+            color: #db4545;
             text-shadow: 1px 1px 5px #e85e5e;
+            font-size: 1.05rem;
         }
 
-        .section-title {
-            color: rgb(219, 72, 72);
-            text-align: center;
-            margin: 40px 0;
+        .red {
+            color: #db4848;
         }
 
-        .project-box,
+        #dynamic-role {
+            color: #db4848;
+            font-weight: 600;
+            font-size: 1.75rem;
+            min-height: 2rem;
+        }
+
         .skill-box {
-            border: 1px solid rgb(219, 72, 72);
-            padding: 20px;
+            border: 1px solid #db4848;
+            background-color: #1c1b1b;
             border-radius: 10px;
             text-align: center;
-            transition: transform 0.3s ease-in-out;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: default;
         }
 
-        .project-box:hover,
         .skill-box:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 10px rgba(219, 72, 72, 0.7);
+            box-shadow: 0 0 10px #db4848;
         }
 
-        .contact-form input,
-        .contact-form textarea {
-            background-color: #1c1b1b;
-            color: white;
-            border: 1px solid #ccc;
+        .contact-info a {
+            color: #a51717;
         }
 
-        .contact-form button {
-            background-color: rgb(148, 21, 21);
-            color: white;
-        }
-
-        .contact-form button:hover {
-            background-color: rgb(147, 18, 18);
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         footer {
             background-color: #222;
-            padding: 20px;
+            color: #eee;
+            padding: 20px 10px;
             text-align: center;
             font-size: 1.2rem;
         }
 
         .social-links a {
             color: #eee;
+            text-decoration: none;
             margin: 0 12px;
             font-size: 1.4rem;
             transition: color 0.3s ease;
@@ -96,133 +96,211 @@
         .social-links a:hover {
             color: red;
         }
+        .nav-link {
+            color: #ffffff;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#"><span>M</span>endy's Portfolio</a>
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">My Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand red fs-3" href="#">Mendy's Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-white"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item mx-2"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#skills">My Skills</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="container text-center py-5">
-        <h1>Hi, My name is <span class="text-danger">Mandeep Singh</span></h1>
-        <h3>I am a Passionate <span id="typed-text" class="text-danger"></span></h3>
-        <img src="assets/img/bg.img1.png" alt="Mandeep Singh Image" class="img-fluid mt-4" style="max-width: 300px;">
-    </section>
-
-    <!-- About Section -->
-    <section class="container" id="about">
-        <h2 class="section-title">About Me</h2>
-        <p>Hello! I'm <strong>Mandeep Singh</strong>, a passionate and self-taught <strong>Frontend Developer</strong>
-            based in <strong>Mohali, India</strong>.</p>
-        <p>I build responsive and user-friendly websites using <strong>HTML, CSS, JavaScript, and Bootstrap</strong>.
-        </p>
-        <p>Currently learning <strong>React.js</strong> to create dynamic and scalable frontend applications.</p>
-        <p>I love solving problems, learning new skills, and collaborating on meaningful projects.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="container my-5" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="project-box">Project-1<br>Lorem ipsum dolor sit amet.</div>
+    <main class="container py-5">
+        <section class="d-flex flex-column flex-lg-row align-items-center justify-content-around mb-5">
+            <div class="text-center text-lg-start mb-4 mb-lg-0" style="max-width: 450px;">
+                <h1 class="fs-2">Hi, My name is <span class="red">Mandeep Singh</span></h1>
+                <p class="fs-4">
+                    and I am a Passionate
+                    <span id="dynamic-role"></span>
+                </p>
             </div>
-            <div class="col-md-4">
-                <div class="project-box">Project-2<br>Lorem ipsum dolor sit amet.</div>
+            <div>
+                <img src="assets/img/bg.img1.png" alt="Mandeep Singh Image" class="img-fluid rounded" style="max-width: 300px;" />
             </div>
-            <div class="col-md-4">
-                <div class="project-box">Project-3<br>Lorem ipsum dolor sit amet.</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section class="container my-5" id="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="row g-3">
-            <div class="col-md-2 col-6">
+        <hr class="border border-2 border-danger" />
+
+        <section id="about" class="mb-5">
+            <h2 class="text-center red mb-4">About Me</h2>
+            <div class="mx-auto" style="max-width: 800px; line-height: 1.6;">
+                <p>Hello! I'm <strong>Mandeep Singh</strong>, a passionate and self-taught <strong>Frontend Developer</strong> based in <strong>Mohali, India</strong>.</p>
+                <p>I build responsive and user-friendly websites using <strong>HTML, CSS, JavaScript, and Bootstrap</strong>.</p>
+                <p>Currently learning <strong>React.js</strong> to create dynamic and scalable frontend applications.</p>
+                <p>I love solving problems, learning new skills, and collaborating on meaningful projects.</p>
+            </div>
+        </section>
+
+        <hr class="border border-2 border-danger" />
+
+        <section id="projects" class="mb-5">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-danger h-100 text-white bg-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Project-1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-danger h-100 text-white bg-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Project-2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-danger h-100 text-white bg-dark">
+                        <div class="card-body">
+                            <h5 class="card-title">Project-3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border border-2 border-danger" />
+
+        <section id="skills" class="mb-5">
+            <h2 class="text-center mb-4">My Skills</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-3 mx-auto" style="max-width: 800px;">
                 <div class="skill-box">HTML</div>
-            </div>
-            <div class="col-md-2 col-6">
                 <div class="skill-box">CSS</div>
-            </div>
-            <div class="col-md-2 col-6">
                 <div class="skill-box">JavaScript</div>
-            </div>
-            <div class="col-md-2 col-6">
                 <div class="skill-box">Bootstrap</div>
-            </div>
-            <div class="col-md-2 col-6">
                 <div class="skill-box">Git & GitHub</div>
+                <div class="skill-box">AI / Chat GPT</div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="container my-5" id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div class="mt-4">
-            <p>Email: <a href="mailto:your.email@example.com" class="text-danger">your.email@example.com</a></p>
-            <p>Phone: +91 12345 67890</p>
-            <p>Location: Mohali, India</p>
-        </div>
-    </section>
+        <hr class="border border-2 border-danger" />
 
-    <!-- Footer -->
+        <section id="contact" class="mb-5">
+            <h2 class="text-center mb-4"><span class="red">Contact</span> Me</h2>
+            <div class="mx-auto" style="max-width: 600px;">
+                <form
+                    action="https://formspree.io/f/mwpozrey"
+                    method="POST"
+                    class="needs-validation"
+                    novalidate>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            name="name"
+                            required
+                            placeholder="Your full name" />
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            required
+                            placeholder="your.email@example.com" />
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea
+                            class="form-control"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                            placeholder="Write your message here"></textarea>
+                        <div class="invalid-feedback">Please enter your message.</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-danger">Send Message</button>
+                </form>
+
+               <div class="contact-info mt-4">
+                    <p>Email: <a href="mailto:mandeep131414singh@gmail.com">mandeep131414singh@gmail.com</a></p>
+                    <p>Phone: +91 9855131414</p>
+                    <p>Location: Mohali,Sec-88 India</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2025 Mandeep Singh. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://github.com/Mandeep-Singh-Samra" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mandeep-singh-74a547355" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Mandeep-Singh-Samra" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a> |
+            <a href="https://www.linkedin.com/in/mandeep-singh-74a547355" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+            <a href="mailto:mandeep131414singh@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i> Email</a>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Vk5SF4fIQ6+x4Uo1dYipQQNGhvDExy4N2b7ywo15DQ6aZxRchXpJkxQaEuL1cyGU"
+        crossorigin="anonymous"></script>
 
-    <!-- Typed.js effect -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- JavaScript for Bootstrap Form Validation -->
     <script>
-        var typed = new Typed('#typed-text', {
-            strings: ["Frontend Developer", "Web Designer", "Bootstrap Expert"],
-            typeSpeed: 50,
-            backSpeed: 25,
-            loop: true
-        });
+        // Bootstrap validation
+        (() => {
+            'use strict';
+            const forms = document.querySelectorAll('.needs-validation');
+            Array.from(forms).forEach((form) => {
+                form.addEventListener(
+                    'submit',
+                    (event) => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    },
+                    false
+                );
+            });
+        })();
+
+        // Simple text rotate effect for dynamic role
+        const roles = ['Frontend Developer', 'React.js Learner', 'Web Designer', 'Problem Solver'];
+        let index = 0;
+        const dynamicRoleEl = document.getElementById('dynamic-role');
+
+        function rotateRole() {
+            dynamicRoleEl.textContent = roles[index];
+            index = (index + 1) % roles.length;
+        }
+        rotateRole();
+        setInterval(rotateRole, 3000);
     </script>
 </body>
 
