@@ -2,337 +2,248 @@
 <html lang="en">
 
 <head>
-
-    <title>Portfolio - Mandeep singh</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <!-- Required meta tags -->
+    <title>Portfolio - Mandeep Singh</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-</head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
 
-    }
-
-    body {
-        background-color: rgb(0, 0, 0);
-        color: white;
-        font-family: poppins, sans-serif;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-        background-color: rgb(28, 27, 27);
-        height: 70px;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    nav ul li {
-        list-style: none;
-        ;
-        margin: 0 23px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-    }
-
-    nav ul li a:hover {
-        font-size: 1.01rem;
-        text-shadow: 1px 1px 5px #e85e5e;
-        text-decoration: none;
-        color: white;
-        cursor: pointer;
-        color: rgb(219, 69, 69);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .left {
-        font-size: 1.5rem;
-    }
-
-    .firstsection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .firstsection>div {
-        width: 30%;
-    }
-
-    .leftsection {
-        font-size: 1.5rem;
-    }
-
-    .rightsection img {
-        width: 70%;
-        margin: 30px 0;
-
-    }
-
-    .red {
-        color: rgb(219, 72, 72);
-    }
-
-    #element {
-        font-size: 2rem;
-        color: rgb(219, 72, 72);
-    }
-
-    main hr {
-        border: 2px solid rgb(219, 72, 72);
-
-    }
-
-    .site-footer {
-        background-color: #222;
-        color: #eee;
-        padding: 20px 10px;
-        text-align: center;
-        font-size: 1.2rem;
-        /* ⬆️ increased from 0.9rem to 1.2rem */
-    }
-
-    .footer-container {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    .social-links {
-        margin-top: 10px;
-    }
-
-    .social-links a {
-        color: #eee;
-        text-decoration: none;
-        margin: 0 12px;
-        font-size: 1.4rem;
-        /* ⬆️ increase icon + link text size */
-        transition: color 0.3s ease;
-    }
-
-    .social-links a:hover {
-        color: red;
-    }
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 100px;
-        padding: 20px;
-    }
-
-    .item {
-        background-color: rgb(0, 0, 0);
-        padding: 20px;
-        color: rgb(235, 235, 235);
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    /* Common styles for all items */
-    .item-1,
-    .item-2,
-    .item-3 {
-        border: 1px solid rgb(219, 72, 72);
-        padding: 20px;
-        height: 150px;
-        font-size: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #skills {
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .secondsection {
-        background-color: rgb(0, 0, 0);
-        padding: 50px 0;
-        height: 50vh;
-    }
-
-    .thirdsection {
-        background-color: rgb(0, 0, 0);
-        padding: 50px 0;
-        height: 50vh;
-    }
-
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
-
-    .skills-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 20px;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .skill-box {
-        border: 1px solid rgb(219, 72, 72);
-        padding: 20px;
-        background-color: rgb(28, 27, 27);
-        color: white;
-        border-radius: 10px;
-        transition: transform 0.3s ease-in-out;
-        font-size: 1rem;
-    }
-
-    .skill-box:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 10px rgba(219, 72, 72, 0.7);
-    }
-
-    .about-section {
-        padding: 60px 20px;
-        background-color: #000000;
-    }
-
-    .about-container {
-        max-width: 800px;
-        margin: 0 auto;
-        color: #fdfdfd;
-        line-height: 1.6;
-    }
-
-    .section-title {
-        text-align: center;
-        font-size: 32px;
-        margin-bottom: 30px;
-    }
-
-    .red {
-        color: red;
-    }
-
-    .contact-section {
-        padding: 60px 20px;
-        background-color: #000000;
-    }
-
-    .contact-container {
-        max-width: 700px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        color: #fcf8f8;
-    }
-
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-
-
-    }
-
-    .contact-form label {
-        font-weight: bold;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        padding: 10px;
-        border: 1px solid #847c7c;
-        border-radius: 5px;
-        font-size: 1rem;
-        resize: vertical;
-        background-color: silver;
-    }
-
-    .contact-form button {
-        width: 150px;
-        padding: 10px;
-        border: none;
-        background-color: rgb(148, 21, 21);
-        color: white;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-
-    .contact-form button:hover {
-        background-color: rgb(147, 18, 18);
-    }
-
-    .contact-info p {
-        margin: 5px 0;
-    }
-
-    .contact-info a {
-        color: rgb(165, 23, 23);
-        text-decoration: none;
-    }
-
-    .contact-info a:hover {
-        text-decoration: underline;
-    }
-
-    @media (min-width: 700px) {
-        .contact-container {
-            flex-direction: row;
-            justify-content: space-between;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        .contact-form,
-        .contact-info {
-            flex: 1;
+        body {
+            background-color: #000;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #1c1b1b;
+            height: 70px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.01rem;
+            text-shadow: 1px 1px 5px #e85e5e;
+            color: rgb(219, 69, 69);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 1.5rem;
+        }
+
+        .rightsection img {
+            width: 70%;
+            margin: 30px 0;
+        }
+
+        .red {
+            color: rgb(219, 72, 72);
+        }
+
+        #element {
+            font-size: 2rem;
+            color: rgb(219, 72, 72);
+        }
+
+        main hr {
+            border: 2px solid rgb(219, 72, 72);
+        }
+
+        .about-section, .secondsection, .thirdsection, .contact-section {
+            background-color: #000;
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-container {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+            padding: 20px;
+        }
+
+        .item-1, .item-2, .item-3 {
+            border: 1px solid rgb(219, 72, 72);
+            padding: 20px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .skill-box {
+            border: 1px solid rgb(219, 72, 72);
+            padding: 20px;
+            background-color: #1c1b1b;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skill-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(219, 72, 72, 0.7);
+        }
+
+        .contact-container {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
 
         .contact-form {
-            margin-right: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
-    }
 
-
-
-
-
-
-    /* Medium screens (tablets) */
-    @media (max-width: 992px) {
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 50px;
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #847c7c;
+            border-radius: 5px;
+            background-color: silver;
         }
-    }
 
-    /* Small screens (mobiles) */
-    @media (max-width: 576px) {
-        .container {
-            grid-template-columns: 1fr;
-            gap: 30px;
+        .contact-form button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: rgb(148, 21, 21);
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
         }
-    }
-</style>
+
+        .contact-form button:hover {
+            background-color: rgb(147, 18, 18);
+        }
+
+        .contact-info a {
+            color: rgb(165, 23, 23);
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .site-footer {
+            background-color: #222;
+            color: #eee;
+            padding: 20px 10px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .social-links a {
+            color: #eee;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 1.4rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: red;
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .firstsection {
+                flex-direction: column;
+            }
+
+            .firstsection > div {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
 
 <body>
     <header>
@@ -341,89 +252,74 @@
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">My Skills</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <main>
         <section class="firstsection">
             <div class="leftsection">
-                Hi, My name is <span class="red">Mandeep Singh</span>
-                <div>and I am a Passionate
-                </div>
-                <span id="element"></span>
+                Hi, My name is <span class="red">Mandeep Singh</span><br>
+                and I am a Passionate <br>
+                <span id="element">Frontend Developer</span>
             </div>
             <div class="rightsection">
-                <img src="assets/img/bg.img1.png" alt="" srcset="">
+                <img src="assets/img/bg.img1.png" alt="Mandeep Singh Image">
             </div>
         </section>
+
         <hr>
+
         <section class="about-section" id="about">
-            <h2 class="section-title" class="red">About Me</h2>
+            <h2 class="section-title red">About Me</h2>
             <div class="about-container">
-                <p>Hello! I'm <strong>Mandeep Singh</strong>, a self-taught
-                <p>Hello! I'm <strong>Mandeep Singh</strong>, a passionate and self-taught <strong>Frontend
-                        Developer</strong> based in <strong>Mohali, India</strong>. I specialize in building responsive
-                    and user-friendly websites using <strong>HTML, CSS, JavaScript, and Bootstrap</strong>.</p>
-
-                <p>Currently, I'm enhancing my skills by learning modern tools like <strong>React.js</strong> to build
-                    dynamic and scalable frontend applications. I enjoy turning designs into functional interfaces and
-                    strive for clean, accessible, and performance-optimized code.</p>
-
-                <p>I’m always curious, constantly learning, and looking for opportunities to collaborate on meaningful
-                    projects that challenge and grow my skills.</p>
-
-                <p>I'm learning frontend technologies
-                    like <strong>HTML, CSS, JavaScript, Bootstrap,</strong> and <strong>React.js</strong> to become a
-                    full-stack developer.</p>
-
-                <p>I love solving problems and learning new skills. I'm looking forward to joining a team where I can
-                    contribute and grow professionally.</p>
+                <p>Hello! I'm <strong>Mandeep Singh</strong>, a passionate and self-taught <strong>Frontend Developer</strong> based in <strong>Mohali, India</strong>.</p>
+                <p>I build responsive and user-friendly websites using <strong>HTML, CSS, JavaScript, and Bootstrap</strong>.</p>
+                <p>Currently learning <strong>React.js</strong> to create dynamic and scalable frontend applications.</p>
+                <p>I love solving problems, learning new skills, and collaborating on meaningful projects.</p>
             </div>
         </section>
+
         <hr>
-        <section class="secondsection">
-            <div class="container item">
+
+        <section class="secondsection" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="container">
                 <div class="item-1">
                     <h4>Project-1</h4>
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, eveniet.</p>
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="item-2">
-                    <h4>Project-1</h4>
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, eveniet.</p>
-                    </div>
+                    <h4>Project-2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="item-3">
-                    <h4>Project-1</h4>
-                    <div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, eveniet.</p>
-                    </div>
+                    <h4>Project-3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-
             </div>
         </section>
 
         <hr>
+
         <section class="thirdsection" id="skills">
-            <h2 class="section-title"> My Skills</h2>
+            <h2 class="section-title">My Skills</h2>
             <div class="skills-container">
                 <div class="skill-box">HTML</div>
                 <div class="skill-box">CSS</div>
                 <div class="skill-box">JavaScript</div>
                 <div class="skill-box">Bootstrap</div>
-
                 <div class="skill-box">Git & GitHub</div>
-
             </div>
         </section>
+
         <hr>
+
         <section class="contact-section" id="contact">
             <h2 class="section-title"><span class="red">Contact</span> Me</h2>
             <div class="contact-container">
@@ -439,7 +335,6 @@
 
                     <button type="submit">Send Message</button>
                 </form>
-
                 <div class="contact-info">
                     <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
                     <p>Phone: +91 12345 67890</p>
@@ -447,45 +342,25 @@
                 </div>
             </div>
         </section>
-
-
     </main>
+
     <hr>
-    <footer>
-        <footer class="site-footer">
-            <div class="footer-container">
-                <p>&copy; 2025 Mandeep Singh. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://github.com/Mandeep-Singh-Samra" target="_blank"><i class="fab fa-github"></i>
-                        GitHub</a>
-                    |
-                    <a href="https://www.linkedin.com/in/mandeep-singh-74a547355" target="_blank"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a>
-                    |
-                    <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
-                </div>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Mandeep Singh. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Mandeep-Singh-Samra" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                |
+                <a href="https://www.linkedin.com/in/mandeep-singh-74a547355" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                |
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-
-
-        <!-- place footer here -->
-
-        <!-- Bootstrap JavaScript Libraries -->
-
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <script>
-            var typed = new Typed('#element', {
-                strings: ['<i>UI/UX Designer</i>', 'Web Developer .'],
-                typeSpeed: 80,
-            });
-        </script>
+    <!-- Optional JavaScript for future use (e.g., Typed.js) -->
+    <!-- <script src="your-script.js"></script> -->
 </body>
-</ht
+
+</html>
