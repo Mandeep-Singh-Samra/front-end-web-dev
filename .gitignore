@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code settings folder
+.vscode/
+
+# Python virtual environment folders
+env/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you use Node)
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables files
+*.env
+
+# Mac/Linux hidden files
+.*.swp
+
+# JetBrains IDEs folders (optional)
+.idea/
