@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+#nav{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#nav h3{
+    font-size:13px ;
+    padding: 2px;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+#nav i{
+    font-size:13px ;
+    padding: 2px;
+    border: 1.5px solid black;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+#nav h1{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#nav button{ 
+    padding: 5px 13px;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    font-size:12px ;
+    font-weight: 600;
+}
+#nav-part3>#btn1{
+    background-color: white;
+}
+#nav-part3>#btn2{
+    background-color: rgba(234, 133, 133, 0.814);
+    color: #fff;
+}
+#main>h1{
+    position: absolute;
+    font-size: 80px;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+img{
+    position: absolute;
+    height: 200px;
+    width: 150px;
+    object-fit:cover;
+    object-position: top;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+#img1{
+    transform: translate(-50%,-50%) rotate(-30deg);
+}
+#img2{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+#btm-left{
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 17px;
+}
+#btm-center{
+    position: absolute;
+    bottom: 0%;
+    left: 46%;
+    font-size: 60px;
+}
+
+#btm-right{
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    font-size: 27px;
+}
