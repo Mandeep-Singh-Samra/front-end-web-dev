@@ -6,7 +6,7 @@
     <title>Project-1</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    
+
 
 </head>
 
@@ -19,6 +19,8 @@
         <h4>COFFEE SHOP</h4>
         <h4>LEAGUES</h4>
     </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
     <video autoplay loop muted src="vid.mp4"></video>
     <div id="main">
         <div id="page1">
@@ -27,10 +29,47 @@
             <p>Sidcup Family Golf is a Toptracer driving range and crazy golf venue in Sidcup, South East London.
                 Passionate about technology, player development and making golf fun and accessible to everyone.</p>
         </div>
-        <div id="page2"></div>
+        <div id="page2">
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4>TOPRACER RANGE</h4>
+                    <h4>GOLF LESSONS</h4>
+                    <h4>ADVENTURE GOLF</h4>
+                    <h4> COFFEE SHOP</h4>
+                    <h4>LEAGUES</h4>
+                </div>
+            </div>
+            <div id="about-us">
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-1-768x511.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+                    alt="" srcset="" id="img1">
+
+                <div id="about-us-in">
+                    <h3>ABOUT US</h3>
+                    <P>Home to a 46-bay, multi-tier, floodlit driving range, powered by Toptracer Range technology.
+                        Complimented by a practice green and bunker, coffee shop and American Golf Store. There truly is
+                        something for everyone as we also boast two outdoor 18-hole dinosaur themed crazy golf courses.
+                        <br>
+                        Please note: we are a cashless venue. The range closes at 10pm with last balls at 9pm.
+                    </P>
+                </div>
+
+                <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-about-2-768x511.jpg?strip=all&lossy=1&sharp=1&ssl=1"
+                    alt="" srcset="" id="img2">
+            </div>
+            
+        </div>
+        <div id="cards-container">
+                <div class="card" id="card1"></div>
+                <div class="card" id="card2"></div>
+                <div class="card" id="card3"></div>
+            </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 
