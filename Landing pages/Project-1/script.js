@@ -3,13 +3,14 @@ var crsr =document.querySelector("#cursor")
 document.addEventListener("mousemove",function(dets){
     gsap.to("#cursor",{
         duration:0.3,
+        delay:0.4,
         x:dets.clientX,
         y:dets.clientY,
         ease:"sine.out"
     })
     gsap.to("#cursor-blur",{
         duration:0.3,
-        delay:0.1,
+        delay:0.4,
         x:dets.clientX,
         y:dets.clientY,
         ease:"sine.out"
