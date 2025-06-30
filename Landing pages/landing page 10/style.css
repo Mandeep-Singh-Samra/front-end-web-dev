@@ -129,7 +129,7 @@ html, body {
   top: 50%;
   right: 3%;
   transform: translate(0%,-50%);
-  background-color: #fff; /* added a white background color to panel */
+  background-color: #c76969; /* added a white background color to panel */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -140,10 +140,10 @@ html, body {
   width: 1vw;
   height: 1vw;
   margin: 10px; /* added margin to separate the small circles */
-  background-color: #333; /* changed background color to dark gray */
+  background-color: #32c24f; /* changed background color to dark gray */
   transition: background-color 0.3s ease-in-out; /* added a transition effect */
 }
 
 .mncircle:hover {
-  background-color: #555; /* changed background color on hover to dark gray */
+  background-color: #c18888; /* changed background color on hover to dark gray */
 }
