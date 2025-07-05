@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    justify-content: space-between;
+    top: 0;
+    margin-top: 10px;
+}
+#nav>h1{
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 0px;
+} 
+
+span{
+    color:springgreen; 
+}
+#nav>#part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav>#part2>a{
+    text-decoration: none;
+    color: #222;
+    margin: 10px;   
+    font-size: 12px;
+
+}
+#nav>#part2>a:nth-last-child(1){
+    /* background-color:rgb(255, 187, 0); */
+    padding: 7px 18px;
+    border-radius: 50px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#nav>#part2>a:nth-last-child(1)>#green{
+    width: 100%;
+    height: 100%;
+    background-color:springgreen;
+    position: absolute;
+    top: 0%;
+    left: -103;
+    transition: left 0.9s ease;
+    
+}
+#nav>#part2>a:nth-last-child(1)>h5{
+    font-weight: 100 ;
+    position: relative;
+    z-index:99 ;
+}
+#nav>#part2>a:nth-last-child(1):hover>#green{
+    left: 0;
+}
+#main>h1{
+    position: relative;
+    font-size: 4.5vw;
+    font-weight:100;
+    width:50%;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 2;
+    /* background-color: red; */
+
+}
+
+#main>h1::after{
+    content:"" ;
+    position: absolute;
+    width: 40%;
+    height: 15px;
+    /* background-color: red; */
+    bottom: -9px;
+    left: 30%;
+    background-image: url("https://thisisdigital.co.uk/dist/images/underline-green.svg");
+    transform: translateX(-50%,-50%);
+    background-size:cover;
+}
+#main #img1{
+    height: 260px;
+    width: 200px;
+    left:5%;
+    top: 17%;
+    position: absolute;
+}
+#main #img2{
+    height: 150px;
+    width: 180px;
+    right:23%;
+    top: 30%;
+    z-index: 1;
+    position: absolute;
+}
+#main #img3{
+    height: 200px;
+    width: 190px;
+    right:7%;
+    top: 35%;
+    position: absolute;
+}
+#main img{
+    transition: margin 0.8s ease;
+}
+#main img:hover{
+    margin-top: -20px;
+}
+#main >h5{
+    position: absolute;
+    text-align: center;
+    /* background-color: red; */
+    bottom: 15%;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: 500;
+}

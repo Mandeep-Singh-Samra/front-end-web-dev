@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palette & Complement Picker</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="app">
+    <h1 class="title">Palette & Complement Generator</h1>
+
+    <!-- base color input -->
+    <input type="color" id="baseColor" class="base-color" value="#ff6b6b" />
+
+    <!-- rows -->
+    <section class="row" id="tints">
+      <h2 class="row-title">Tints</h2>
+      <div class="swatch-list"></div>
+    </section>
+
+    <section class="row" id="shades">
+      <h2 class="row-title">Shades</h2>
+      <div class="swatch-list"></div>
+    </section>
+
+    <section class="row" id="complement">
+      <h2 class="row-title">Complement</h2>
+      <div class="swatch-list single"></div>
+    </section>
+  </main>
+
+  <!-- your JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

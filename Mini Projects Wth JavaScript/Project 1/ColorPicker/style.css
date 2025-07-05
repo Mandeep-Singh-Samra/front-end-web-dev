@@ -1,0 +1,74 @@
+/* —— Base reset —— */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  background:#121212;
+  font-family:'Poppins',sans-serif;
+  color:#fff;
+  padding-top:2rem;
+}
+
+/* —— Layout —— */
+.app{
+  width:min(90%,500px);
+  text-align:center;
+}
+
+.title{
+  font-size:1.8rem;
+  margin-bottom:1.5rem;
+}
+
+/* color input */
+.base-color{
+  width:120px;
+  height:60px;
+  border:none;
+  cursor:pointer;
+  border-radius:.5rem;
+  margin-bottom:2.5rem;
+}
+
+/* rows */
+.row{margin-bottom:2rem;}
+.row-title{
+  font-size:1.2rem;
+  margin-bottom:1rem;
+}
+
+/* swatch container */
+.swatch-list{
+  display:flex;
+  gap:.5rem;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* single complement row narrower */
+.swatch-list.single{justify-content:center}
+
+/* individual swatch */
+.swatch{
+  width:72px;
+  height:72px;
+  border-radius:.5rem;
+  cursor:pointer;
+  position:relative;
+  transition:transform .2s;
+}
+.swatch:hover{transform:scale(1.07);}
+
+/* hex label */
+.swatch::after{
+  content:attr(data-hex);
+  position:absolute;
+  bottom:-1.6rem;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:.75rem;
+  color:#ccc;
+}

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0; /* added a light gray background color */
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  position: absolute;
+  left: -100vh;
+  top: 50%;
+  transform: translate(0%,-50%) rotate(100deg);
+  width: 200vh;
+  height: 200vh;
+  border-radius: 50%;
+  border: 2px solid #333; /* changed border color to dark gray */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* added a subtle shadow effect */
+}
+
+.stripe {
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%,-50%);
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #fff; /* added a white background color to stripes */
+  transform-origin: 0% 50%;
+  transition: transform 0.5s ease-in-out; /* added a transition effect to stripes */
+}
+
+.str1 {
+  transform: translate(0%,-50%) rotate(-20deg);
+  background-color: #ff69b4; /* added a pink background color to first stripe */
+}
+
+.str2 {
+  transform: translate(0%,-50%) rotate(-10deg);
+  background-color: #ffe6cc; /* added a light orange background color to second stripe */
+}
+
+.str3 {
+  transform: translate(0%,-50%) rotate(0deg);
+  background-color: #ffff99; /* added a light yellow background color to third stripe */
+}
+
+.str4 {
+  transform: translate(0%,-50%) rotate(10deg);
+  background-color: #ccff99; /* added a light green background color to fourth stripe */
+}
+
+.str5 {
+  transform: translate(0%,-50%) rotate(20deg);
+  background-color: #99ffff; /* added a light blue background color to fifth stripe */
+}
+
+.first {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smcircle {
+  position: absolute;
+  right: -.3vw;
+  top: 50%;
+  transform: translate(0%,-50%);
+  width: .5vw;
+  height: .5vw;
+  background-color: #333; /* changed small circle color to dark gray */
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* added a subtle shadow effect to small circle */
+}
+
+.second {
+  width: 50%;
+  height: 100%;
+  padding-left: 30px;
+  opacity: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.second h4 {
+  font-size: 2vw;
+  color: #333; /* changed heading color to dark gray */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* added a subtle shadow effect to heading */
+}
+
+.second h6 {
+  font-size: 1vw;
+  opacity: 0.5;
+  font-weight: 500;
+  color: #666; /* changed subheading color to dark gray */
+}
+
+#panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 5%;
+  height: 20%;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translate(0%,-50%);
+  background-color: #c76969; /* added a white background color to panel */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mncircle {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 1vw;
+  height: 1vw;
+  margin: 10px; /* added margin to separate the small circles */
+  background-color: #32c24f; /* changed background color to dark gray */
+  transition: background-color 0.3s ease-in-out; /* added a transition effect */
+}
+
+.mncircle:hover {
+  background-color: #c18888; /* changed background color on hover to dark gray */
+}
