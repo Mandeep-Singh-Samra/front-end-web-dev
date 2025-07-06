@@ -1,0 +1,9 @@
+.bulb{
+  width:100px;
+  height:100px;
+}
+
+.bulb.on{
+  /* Only a glow now, the yellow image supplies the colour */
+  filter: drop-shadow(0 0 20px #f9e600) drop-shadow(0 0 40px #f9e600);
+}
