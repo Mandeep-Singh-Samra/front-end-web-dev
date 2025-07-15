@@ -11,6 +11,7 @@ body {
   background-image: url("https://i.pinimg.com/1200x/af/80/b3/af80b3dfd23ca32ec1df478a1df950fd.jpg");
   object-fit: cover;
   background-position: center;
+  /* background-repeat: no-repeat; */
   
 }
 .header {
@@ -69,6 +70,7 @@ h1 {
   /* position: relative; */
   object-fit: cover;
   background-position: center;
+  
   background-size: cover;
   animation-delay: 0s;
 }
