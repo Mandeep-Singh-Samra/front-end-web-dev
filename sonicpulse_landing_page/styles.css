@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --clr-bg: #000;
+  --clr-text: #fff;
+  --clr-gray: #aaa;
+  --radius: 0.5rem;
+  --transition: 0.25s ease;
+  font-size: 16px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.btn–solid,
+.btn–outline {
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+.btn–solid {
+  background: var(--clr-text);
+  color: var(--clr-bg);
+}
+.btn–solid:hover {
+  background: var(--clr-gray);
+}
+.btn–outline {
+  background: transparent;
+  border: 2px solid var(--clr-text);
+  color: var(--clr-text);
+}
+.btn–outline:hover {
+  background: var(--clr-text);
+  color: var(--clr-bg);
+}
+.nav {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.logo span {
+  color: var(--clr-text);
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-content {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: center;
+  gap: 3rem;
+}
+.headline {
+  font-size: clamp(2rem, 5vw + 1rem, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.sub {
+  margin: 1rem 0 2rem;
+  max-width: 28ch;
+  color: var(--clr-gray);
+}
+.hero-img {
+  width: 100%;
+  border-radius: var(--radius);
+  filter: grayscale(1) contrast(1.1);
+  transition: var(--transition);
+}
+.hero-img:hover {
+  transform: scale(1.03);
+}
+.features {
+  width: min(90%, 1200px);
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+.feature h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.feature p {
+  color: var(--clr-gray);
+  font-size: 0.95rem;
+}
+.footer {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  color: var(--clr-gray);
+  font-size: 0.9rem;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px dashed var(--clr-text);
+  outline-offset: 4px;
+}
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
+}
