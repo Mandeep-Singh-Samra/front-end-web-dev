@@ -73,17 +73,87 @@
       "src",
       "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_120x44dp.png"
       );
+        1-getAttribute
+        2-setAttribute
+        3-removeAttribute
 
+        1-getAttribute--
+          ehde nal apa a tag de vich href ohnu ikale nu special select kr skde aw, getAttribute a jehda oh value nu get kr lenda a jdo apa kehne a a.getAttribute("href");
+          console.log nal apa ne ehnu print krwa k dekh k lya k  ehne ki value select kri a
 
+          syntax-
+            let a = document.querySelector("a");
+            console.log(a.getAttribute("href"));
 
+        2-setAttribute-
+          setAttribute nal apa jive a tag de vich href and img tag de vich src a ohna di value apa JavaScript de rahi set kr skde aw jive ehde naam to v pta lagda e a , bakki value j html ch ditti v hovi ohnu v apa change kr skde aw .
+            pro-syntax-
+              let a = document.querySelector("a");
+              a.setAttribute("href", "https://www.google.com")
 
+            pro-syntax-2-
+              let img = document.querySelector("img");
+              img.setAttribute(
+              "src",
+              "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_120x44dp.png"
+              );
+        3-removeAttribute-
+          ehde nal apa kise v attribute di value a jehdi ohnu remove kr skde aw , jehdi html de vich diti hundi a apa for example img de src vich kujh dita hove ohnu chak sakde aw ehde nal apa 
+            syntax-
+              let img = document.querySelector("img");
+              img.removeAttribute("src");
+            syntax-2-
+              let a = document.querySelector("a");
+              a.removeAttribute("href");
+  2.Dynamic Attribute Manipulation-
+    1-createElement
+    2-appendChild
+    3-removeChild
+    4-prependChild
 
+    1-createElement - apa ehda use html create krn lyi krde aw for example apa h1 create krna a tn ehda syntax ah houga
+      let h1 = document.createElement("h1");
+      h1.textContent = "hello world";
+      console.log(h1);
 
+      textContent - jehda apa ehde vich use krya aw oh html de tag andar text vgera add krn de kam aunda a
+    
+    2-appendChild- j apa html de element nu show krauna hove apne display te fer apa appendChild use krde aw , eh script tag to baad bich add hou ga code de
+      let h1 = document.createElement("h1");
+      h1.textContent = "hello world";
+      console.log(h1);
+      document.body.appendChild(h1);
+    
+    3-prepentChild- j apa html de element nu show krauna hove apne display te fer apa prependChild use krde aw , eh script tag to pehlan  add hou ga code vich 
+      let h1 = document.createElement("h1");
+      h1.textContent = "hello world";
+      console.log(h1);
+      document.body.prepend(h1);
 
+    4.removeChild-just use the remove to remove as simple as that
 
-
-
-
-
+  3-style updates 
+    1.style -
+    js se css badla .style di help nal 
+    sytanx-
+      let h1 = document.querySelector("h1");
+      h1.style.color = "red";
+      h1.style.fontSize = "3rem";
+      apa CSS da kuch v change kr skde aw element de nal .style lake 
+      syntax-
+        let bg = document.querySelector("body");
+        bg.style.backgroundColor = "black";
+    2-classList -
+      ehde vich apa CSS de vich jehdia apa classes ditia hundia ne ohna nu kr skde aw JS vich ,jive apa css di koi class nu js de rahi kise element te apply krna chauhna tn apa classList use krde aw
+      syntax-
+        let bg = document.querySelector("body");
+        bg.classList.add("clr");
+      clr ehde apne kol css di class a jehnu apa use krya aw css nu js rahi change krn lyi 
+        1-.add() 
+          ehde vich apa ne .add() naam da method use krya a class add krn lyi 
+        2-.remove()
+          apa ehde vich j .remove method da use krde tn apa html de vich koi v element te laggi hoyi class nu htta v sakde aw 
+        3-.toggle()
+          toggle a jehda eh kam krda aw putha j tn class lagi hove fer tn htta dinda  , j na laggi hove koi class fer la dinda 
 
 */
