@@ -124,7 +124,7 @@
       console.log(h1);
       document.body.appendChild(h1);
     
-    3-prepentChild- j apa html de element nu show krauna hove apne display te fer apa prependChild use krde aw , eh script tag to pehlan  add hou ga code vich 
+    3-prependChild- j apa html de element nu show krauna hove apne display te fer apa prependChild use krde aw , eh script tag to pehlan  add hou ga code vich 
       let h1 = document.createElement("h1");
       h1.textContent = "hello world";
       console.log(h1);
@@ -155,5 +155,25 @@
           apa ehde vich j .remove method da use krde tn apa html de vich koi v element te laggi hoyi class nu htta v sakde aw 
         3-.toggle()
           toggle a jehda eh kam krda aw putha j tn class lagi hove fer tn htta dinda  , j na laggi hove koi class fer la dinda 
+
+--> 'getElementById' and 'querySelector' de vich main difference eh hunda a k getElementById ch apa nu sirf naam dena penda a , but querySelector ch apa sara kuch select kr skde aw jive class tag element id sara kuch with help of  for example apa nu ehde vich class lyi . launa penda a te id lyi # tag , 
+  main gal a jehdi querySelector a jehda oh vadh kam da a
+
+    -->querySelectorAll - nu apa odo use krde aw jdo apa same class ja id  de mutltiple values like buttons vgera jehna sareya te apa oh class use krni hundi a fer apa ehda use krde awe 
+    syntax-
+      let button = document.querySelectorAll(".buy-btn");
+      
+      ehde nal apa jine v button ne jehda vich buy-btn naam di class use hoyi hoyi a ohna nu select kr lya a , te select krn to baad agge apa jo marji changes kr skde aw .
+
+  ->  'textContent'
+      'innerText '
+      'innerHTML'
+        main difference -
+          eh hunda a k innHTMl de vich apa html tags use kr skde aw  but textContent and innerText de andar apa sirf text hi add kr skde aw ehde ch apa html de tag ni add kr skde 
+
+
+
+
+
 
 */

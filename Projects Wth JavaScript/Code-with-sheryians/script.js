@@ -1,2 +1,2 @@
-let bg = document.querySelector("body");
-bg.classList.add("clr");
+let p = document.querySelector("p");
+let div = document.querySelector("div").removeChild(p);
