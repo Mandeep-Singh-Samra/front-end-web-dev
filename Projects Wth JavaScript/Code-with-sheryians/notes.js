@@ -124,7 +124,7 @@
       console.log(h1);
       document.body.appendChild(h1);
     
-    3-prependChild- j apa html de element nu show krauna hove apne display te fer apa prependChild use krde aw , eh script tag to pehlan  add hou ga code vich 
+    3-prependChild-prepend- j apa html de element nu show krauna hove apne display te fer apa prependChild use krde aw , eh script tag to pehlan  add hou ga code vich 
       let h1 = document.createElement("h1");
       h1.textContent = "hello world";
       console.log(h1);
