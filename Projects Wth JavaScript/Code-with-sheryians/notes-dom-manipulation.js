@@ -1,4 +1,4 @@
-/* 1.dom manipulation
+/* 1.DOM MANIPULATION
 
     1-html se element select karna
       1.querys and querysall are main in this section
@@ -171,9 +171,12 @@
         main difference -
           eh hunda a k innHTMl de vich apa html tags use kr skde aw  but textContent and innerText de andar apa sirf text hi add kr skde aw ehde ch apa html de tag ni add kr skde 
 
-
-
-
-
-
+        ->element - 
+          is like class id or tag 
+        
+        ->parameter -
+          is like src hrf etc
 */
+
+
+
