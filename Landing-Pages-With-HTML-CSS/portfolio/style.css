@@ -31,7 +31,7 @@ body {
   height: 100%;
   width: 100%;
 }
-
+/* navbar section  */
 .nav {
   width: 100%;
   height: 30px;
@@ -68,6 +68,7 @@ body {
   text-decoration: none;
   color: var(--text-color);
 }
+/* section-1 heading */
 .main-heading {
   display: flex;
   align-items: center;
@@ -84,6 +85,7 @@ body {
   font-weight: 400;
   text-align: center;
 }
+/* section-1  */
 .about-container {
   display: flex;
   justify-content: space-between;
@@ -154,6 +156,7 @@ body {
   border: none;
   border-radius: 55%;
 }
+/* section-3-skills  */
 .skills-container {
   height: 100%;
   width: 100%;
@@ -186,7 +189,7 @@ section-3 h1 {
   font-weight: 600;
   opacity: 0.9;
 }
-
+/* section-4-education */
 .education-container {
   text-align: center;
   padding: 80px 20px;
@@ -241,16 +244,19 @@ section-3 h1 {
   color: #666;
   margin-top: 5px;
 }
+
+/* section-5-projects css */
 .project-section {
   height: 100%;
   width: 100%;
   padding: var(--padding);
+  padding-top: 60px;
   text-align: center;
 }
 
 .project-section h2 {
   font-size: 3rem;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .projects-container {
@@ -268,7 +274,10 @@ section-3 h1 {
   transition: transform 0.3s ease;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
-
+.project-card a {
+  text-decoration: none;
+  color: var(--text-color);
+}
 .project-card:hover {
   transform: translateY(-10px);
 }
@@ -282,11 +291,133 @@ section-3 h1 {
 .category {
   color: gray;
   font-size: 14px;
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 1px;
 }
 
 .title {
   font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--text-color);
   font-weight: bold;
+  margin-top: 5px;
+  /* margin-bottom: 40px; */
+
+}
+/* section-6-quetes css */
+.testimonial-section {
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonial-container {
+  max-width: 800px;
+  margin: auto;
+  font-family: "Georgia", serif;
+  color: #111;
+}
+
+.testimonial-quote {
+  font-size: 1.7rem;
+  line-height: 1.8;
+  margin-bottom: 60px;
+  position: relative;
+  margin-top: 60px;
+}
+
+.testimonial-author strong {
+  font-size: 1.1rem;
+  color: #000;
+}
+
+
+
+
+
+/* section-7 contact css */
+.call-to-action {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.circle {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border: 2px dotted #000;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  margin-top: 100px;
+}
+
+.cta-text {
+  font-size: 2rem;
+  opacity: 0.9;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "Georgia", serif;
+  line-height: 1.2;
+  color: #000;
+}
+
+.arrow {
+  font-size: 2rem;
+  
+}
+/* section-footer css */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 30px 60px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #000;
+  position: relative;
+  margin-bottom: -40px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  margin-top: 15px;
+}
+
+.footer-center a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-right a {
+  color: #000;
+  margin-left: 15px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.footer-right a:hover {
+  transform: scale(1.1);
+}
+.footer > * {
+  z-index: 1;
 }
