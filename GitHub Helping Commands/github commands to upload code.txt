@@ -1,4 +1,4 @@
 git pull origin main
 git add .
-git commit -m "Update: <what you changed>"
+git commit -m "Update: New commit"
 git push origin main
