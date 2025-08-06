@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  background-color:#CDC6BE;
+  position: relative;
+}
+#nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid #000;
+}
+#nav img {
+  height: 15px;
+  width: 30%;
+
+}
+#nav h5 {
+  font-size: 15px;
+  font-weight: 100;
+  width: 30%;
+}
+#nav i {
+  cursor: pointer;
+  width: 30%;
+  text-align: right;
+}
