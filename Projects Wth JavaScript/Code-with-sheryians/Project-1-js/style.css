@@ -1,18 +1,34 @@
+@font-face {
+  font-family: "Domaine";
+  src: url(./5f242a69b1577e63266b4d72_DomaineDispCondMedium.ttf);
+}
+@font-face {
+  font-family: "canopee";
+  src: url(./5f242a69b1577e63266b4d72_Canopee-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
+#main {
+  background-color: #2b2a28;
+}
+/* first page  */
 #page1 {
   height: 100vh;
   width: 100vw;
-  background-color:#CDC6BE;
+  background-color: #cdc6be;
   position: relative;
+  overflow-x: hidden;
 }
+/* navbar */
 #nav {
   height: 70px;
   width: 100%;
@@ -23,9 +39,8 @@ html, body {
   border-bottom: 1px solid #000;
 }
 #nav img {
-  height: 15px;
+  height: 18px;
   width: 30%;
-
 }
 #nav h5 {
   font-size: 15px;
@@ -34,6 +49,141 @@ html, body {
 }
 #nav i {
   cursor: pointer;
+  font-size: 25px;
   width: 30%;
   text-align: right;
+}
+#elems {
+  padding: 30px 50px;
+  height: 300px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#elem1 {
+  width: 30%;
+  height: 100%;
+  /* background-color: blue; */
+}
+#elem1 h4 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: canopee;
+}
+#elem1 h4 span {
+  background-color: #b83c12;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 5px;
+  margin-left: 10px;
+}
+
+#elem1 #image-div {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+#elem1 p {
+  font-size: 16px;
+  /* margin-top: 15px;
+  margin-bottom: 10px; */
+  font-family: "Domaine";
+  font-weight: 100;
+  color: #43413e;
+}
+
+#elem2 {
+  width: 30%;
+  height: 100%;
+  /* background-color: rgb(58, 179, 31); */
+  border-right: 1px solid #434141;
+  border-left: 1px solid #434141;
+  text-align: center;
+  padding-top: 10px;
+}
+#elem2 h2 {
+  font-family: canopee;
+  font-size: 55px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+#elem2 h3 {
+  font-family: domaine;
+  font-size: 35px;
+  font-weight: 100;
+  color: #272624;
+}
+#elem2 h6 {
+  font-family: domaine;
+  font-size: 18px;
+  font-weight: 100;
+  color: #272624;
+  margin-top: 10px;
+}
+#elem2 h6 span {
+  /* background-color: #b83c12; */
+  color: black;
+  padding: 0px 3px;
+}
+#image-div:hover img {
+  scale: 1.1;
+  transition: all ease-in-out 0.1s;
+}
+
+#elem3 {
+  width: 30%;
+  height: 100%;
+  /* background-color: rgb(160, 181, 39); */
+}
+#elem3 h4 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: canopee;
+}
+#elem3 h4 span {
+  background-color: #b83c12;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 5px;
+  margin-left: 10px;
+}
+
+#elem3 #image-div {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+#elem3 p {
+  font-size: 16px;
+  /* margin-top: 15px;
+  margin-bottom: 10px; */
+  font-family: "Domaine";
+  font-weight: 100;
+  color: #43413e;
+}
+
+#image-div:hover img {
+  scale: 1.1;
+  transition: all ease-in-out 0.8s;
+}
+#image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #434141;
+}
+#page1 h1 {
+  font-family: canopee;
+  color: #c4bdb3;
+  background-color: #1c1c1a;
+  text-align: center;
+  font-size: 450px;
+  font-weight: 100;
+  line-height: 400px;
+  margin-left: 2%;
+  width: 96%;
+  letter-spacing: -15px;
 }
