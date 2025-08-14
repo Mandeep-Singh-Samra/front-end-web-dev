@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "General Sans Medium", sans-serif;
+  color: white;
 }
 
 html,
@@ -14,6 +15,23 @@ body {
 
 #main {
   width: 100%;
+}
+#mini-circle {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+.bounding {
+  width: fit-content;
+  /* background-color: crimson; */
+  overflow: hidden;
+}
+.bounding .boundingElem {
+  transform: translate(100%);
 }
 #hero {
   width: 100%;
@@ -84,11 +102,10 @@ body {
 }
 #second-page {
   width: 100%;
-  height: 100vh;
   background-color: black;
   color: rgba(255, 255, 255, 0.551);
-  margin-left: 3vw;
-  margin-top: 10vw;
+  padding-left: 3vw;
+  margin-top: 15vw;
 }
 .elem {
   width: 85%;
@@ -123,11 +140,66 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.594);
 }
 #about {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
   width: 100%;
-  padding: 10vw 5vw;
+  gap: 5vw;
+  padding-top: 15vw;
+  padding-left: 35vw;
   color: white;
 }
 #about img {
   width: 18vw;
   object-fit: cover;
+}
+#textabout {
+  width: 30vw;
+  /* background-color: red; */
+
+}
+#textabout h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 1vw;
+  margin-top: 4vw;
+}
+#textabout p {
+  font-size: 1.2vw;
+  line-height: 2vw;
+}
+#about button {
+  margin-top: 1vw;
+  padding: 0.5vw 2vw;
+  border-radius: 3vw;
+  color: white;
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.594);
+}
+#subscribe h3{
+  font-size: 1.5vw;
+  font-weight: 300;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+}
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 3vw;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  margin-top: 10vw;
+  
+}
+#footer-left {
+  display: flex;
+  gap:3vw;
+}
+#footer-right{
+  display: flex;
+  gap:3vw;
+}
+#footer-right a{
+  text-decoration: none;
 }
