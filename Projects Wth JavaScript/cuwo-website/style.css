@@ -126,10 +126,13 @@ body {
   font-size: 1.3vw;
 }
 .elem img {
+  /* display: none; */
+  opacity: 0;
   z-index: 1;
   position: absolute;
-  /* height: 100%; */
+  /* height: 140%; */
   width: 15vw;
+  /* left: 25vw; */
 }
 #btn button {
   margin-top: 3vw;
@@ -202,4 +205,49 @@ body {
 }
 #footer-right a{
   text-decoration: none;
+}
+@media (max-width: 480px) {
+  #hero #nav a{
+    font-size: 2.5vw;
+  }
+  #hero #nav h2{
+    font-size: 2.5vw;
+  }
+  #hero #hero-footer{
+    font-size: 2vw;
+  }
+  #second-page {
+    /* background-color: red; */
+    margin-top: -90vw;
+  }
+  #second-page>.elem h1{
+    font-size: 4vw;
+  }
+  #second-page .elem h5 {
+    font-size: 3vw;
+  }
+  #about {
+    padding-left: 10vw;
+    padding-top: 5vw;
+  }
+  #about h5 {
+    font-size: 3vw;
+  }
+  #about p{
+    font-size: 1.8vw;
+    width: 60vw;
+  }
+  #about button {
+    margin-top: 3vw;
+    padding: 1vw 2vw;
+    font-size: 2.5vw;
+  }
+  #subscribe h3{
+    padding-left: 3vw;
+    font-size: 2vw;
+  }
+  #footer {
+    font-size: 2.5vw;
+  }
+  
 }
