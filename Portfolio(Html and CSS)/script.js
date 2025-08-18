@@ -8,8 +8,8 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector("#navLinks");
+const navLinks = document.querySelector("#navLinks");
 
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
